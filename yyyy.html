@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Table</title>
+
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        table{
+            width: 1500px;
+            border-collapse: collapse;
+            margin: 15px auto;
+        }
+
+        th, td{
+            max-width: 50px;
+            border: 3px solid rgb(196, 170, 170);
+            padding: 10px;
+            font-size: 25px;
+        }
+
+        th{
+            background-color: #b5b5f8;
+            text-align: center;
+        }
+
+        input[type="text"]{
+            width: 90%;
+            height: 30px;
+            font-size: 25px;
+        }
+
+        select{
+            font-size: 25px;
+            padding: 3px;
+        }
+
+        textarea{
+            width: 98%;
+            height: 180px;
+            font-size: 24px;
+        }
+
+        button{
+            font-size: 28px;
+            padding: 10px 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Value</th>
+    </tr>
+
+    <tr>
+        <td>Name</td>
+        <td>
+            <input type="text">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Sex</td>
+        <td>
+            <input type="radio" name="gender"> Male <br>
+            <input type="radio" name="gender" checked> Female
+        </td>
+    </tr>
+
+    <tr>
+        <td>Eye color</td>
+        <td>
+            <select>
+               
+                <option>green </option>
+                <option>blue</option>
+                <option>brown</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Check all that apply</td>
+        <td>
+            <input type="checkbox"> Over 6 feet tall <br>
+            <input type="checkbox"> Over 200 pounds
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            Describe your athletic ability:
+            <br><br>
+            <textarea></textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <button>Enter my information</button>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
